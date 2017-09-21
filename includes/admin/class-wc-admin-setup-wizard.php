@@ -1247,10 +1247,10 @@ class WC_Admin_Setup_Wizard {
 				<img src="<?php echo esc_url( WC()->plugin_url() . '/assets/images/jetpack-green-logo.svg' ); ?>" alt="Jetpack" />
 				<input type="submit" class="button-primary button button-large button-jetpack-connect" value="<?php esc_attr_e( 'Connect to Jetpack through WordPress.com', 'woocommerce' ); ?>" />
 				<input type="hidden" name="save_step" value="activate" />
-				<h3><?php esc_html_e( "Reasons you'll love Jetpack", 'woocommerce' ); ?></h3>
 			</div>
+			<h3 class="jetpack-reasons"><?php esc_html_e( "Reasons you'll love Jetpack", 'woocommerce' ); ?></h3>
 			<ul class="wc-wizard-features">
-				<li class="wc-wizard-feature-item first">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Better security', 'woocommerce' ); ?></strong>
 					</p>
@@ -1258,7 +1258,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Automatically block attacks and protect your store from unauthorized access.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item last">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Store management', 'woocommerce' ); ?></strong>
 					</p>
@@ -1266,7 +1266,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Manage multiple stores and update extensions from a single dashboard.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item first">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Store monitoring', 'woocommerce' ); ?></strong>
 					</p>
@@ -1274,7 +1274,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Get an alert if any downtime is detected on your store.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item last">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Product promotion', 'woocommerce' ); ?></strong>
 					</p>
