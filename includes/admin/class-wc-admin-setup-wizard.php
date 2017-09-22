@@ -1055,14 +1055,17 @@ class WC_Admin_Setup_Wizard {
 				<?php if ( ! empty( $item_info['settings'] ) ) : ?>
 					<div class="wc-wizard-service-settings">
 						<?php foreach ( $item_info['settings'] as $setting_id => $setting ) : ?>
-							<label for="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"><?php echo esc_html( $setting['label'] ); ?>:</label>
-							<input
-								type="<?php echo esc_attr( $setting['type'] ); ?>"
-								id="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
-								name="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
-								value="<?php echo esc_attr( $setting['value'] ); ?>"
-								placeholder="<?php echo esc_attr( $setting['placeholder'] ); ?>"
-							/>
+							<div class="setting-<?php echo esc_attr( $item_id ); ?>-<?php echo esc_attr( $setting_id ); ?>">
+								<label for="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"><?php echo esc_html( $setting['label'] ); ?>:</label>
+								<input
+									type="<?php echo esc_attr( $setting['type'] ); ?>"
+									id="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
+									class="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
+									name="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
+									value="<?php echo esc_attr( $setting['value'] ); ?>"
+									placeholder="<?php echo esc_attr( $setting['placeholder'] ); ?>"
+								/>
+							</div>
 						<?php endforeach; ?>
 					</div>
 				<?php endif; ?>

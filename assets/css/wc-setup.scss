@@ -767,3 +767,18 @@ h3.jetpack-reasons {
 		}
 	}
 }
+
+input.stripe_email {
+	font-weight: bold;
+	border: none;
+	color: #666;
+	font-size: 14px;
+}
+
+.setting-stripe-email::after {
+	content: '\f464'; //edit icon
+	font-family: 'dashicons';
+	font-size: 18px;
+	margin-left: -1em;
+	vertical-align: middle;
+}

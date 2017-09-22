@@ -95,4 +95,9 @@ jQuery( function( $ ) {
 		e.preventDefault();
 		waitForJetpackInstall();
 	} );
+
+	// Edit button should focus on email address input element
+	$( '.setting-stripe-email' ).click( function() {
+		$( 'input.stripe_email' ).focus();
+	} );
 } );
